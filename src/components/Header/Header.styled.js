@@ -2,7 +2,7 @@ import {NavLink} from 'react-router-dom';
 import styled from 'styled-components';
 
 export const StyledHeader = styled.header `
-  background-color: cornflowerblue;
+  background-color: green;
 `;
 
 export const Wrapper = styled.div `
@@ -21,6 +21,7 @@ export const Nav = styled.nav `
 
 export const NavList = styled.ul `
   display: flex;
+  list-style: none;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 24px;

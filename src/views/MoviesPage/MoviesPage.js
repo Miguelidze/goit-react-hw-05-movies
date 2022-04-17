@@ -6,8 +6,6 @@ import api from '../../services/apiService';
 import MoviesList from 'components/Movie/MoviesList/MoviesList';
 import Searchbar from 'components/Searchbar/Searchbar';
 import Loader from 'components/Loader/Loader';
-// import { render } from '@testing-library/react';
-
 
 let source;
 
@@ -53,7 +51,7 @@ export default function MoviesPage() {
 
   const getQuery = query => {
     if (query === searchQuery) {
-      toast.error('You are already on the page.');
+      toast.error('You are already on the page of this query.');
       return;
     }
 
@@ -62,13 +60,11 @@ export default function MoviesPage() {
     });
   };
 
-    render ( 
+  return ( 
     <>
       <Searchbar getQuery={getQuery} />
-      {isLoading && < Loader />}
-      <MoviesList movies = {movies} from = {from}/>
+      {isLoading && <Loader />}
+      <MoviesList movies={movies} from={from} />
     </>
-        
-    
   );
 }

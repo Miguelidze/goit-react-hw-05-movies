@@ -14,7 +14,7 @@ export const Input = styled.input.attrs({
   font-size: 20px;
   &:hover,
   &:focus {
-    outline: 1px solid lightgreen;
+    outline: 1px solid purple;
   }
 `;
 
@@ -28,6 +28,6 @@ export const ButtonSearch = styled.button `
   font-size: 20px;
   &:hover,
   &:focus {
-    background-color: lightgreen;
+    background-color: purple;
   }
 `;
