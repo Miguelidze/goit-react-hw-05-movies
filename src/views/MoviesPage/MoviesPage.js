@@ -63,9 +63,11 @@ export default function MoviesPage() {
 
     render ( 
     <>
-        <Searchbar getQuery={getQuery} />
-        {isLoading && < Loader />}
-        <MoviesList movies={movies} from={from} />
+      <Searchbar getQuery={getQuery} />
+      {isLoading && < Loader />}
+      <MoviesList movies = {movies} from = {from}/>
     </>
+        
+    
   );
 }

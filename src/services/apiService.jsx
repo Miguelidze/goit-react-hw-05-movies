@@ -70,8 +70,8 @@ function normalizedCast(cast) {
         id: item['cast_id'],
         name: item.name,
         src: item['profile_path']
-             `${IMG_URL}${item['profile_path']}`
-            ,
+            ? `${IMG_URL}${item['profile_path']}`
+            : defaultImage,
         character: item.character,
     }));
 }

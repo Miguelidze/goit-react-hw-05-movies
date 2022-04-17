@@ -1,12 +1,17 @@
-import React from "react";
-import { Link } from './Navigation.styled';
+import { Container, Item, List, Title, Link } from './Navigation.styled';
 
-const Navigation = () => {
+export default function Navigation() {
     return (
-        <div >
-            <Link to="/" > Home </Link>
-            <Link to="/movies" > Movies </Link>
-        </div>)
-};
-
-export default Navigation;
+        <Container>
+            < Title > Navigation: </Title>
+            <List>
+                <Item>
+                    <Link to="cast">Cast</Link>
+                </Item>
+                <Item>
+                    <Link to="reviews">Reviews</Link>
+                </Item>
+            </List>
+        </Container>
+    );
+}

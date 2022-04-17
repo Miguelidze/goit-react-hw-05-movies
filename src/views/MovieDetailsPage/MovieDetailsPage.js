@@ -5,7 +5,7 @@ import axios from 'axios';
 import api from '../../services/apiService';
 import {Button, Image, Text, Title, WrapperMovie} from './MovieDetailsPage.styled.js';
 import Loader from 'components/Loader/Loader';
-import AdditionalInfo from 'components/AdditionalInfo/AdditionalInfo';
+import AdditionalInfo from 'components/Navigation/Navigation';
 
 let source;
 
