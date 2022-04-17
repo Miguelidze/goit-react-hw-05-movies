@@ -1,8 +1,10 @@
 import axios from 'axios';
+import defaultImage from './PngItem_350426.png';
+import noImageAvailable from './noImageAvailable.jpg';
 
 const BASE_URL = 'https://api.themoviedb.org/3';
 const KEY_API = '0ca4078b205b64c9b82c8ca35a49b750';
-const IMG_URL = '../image/noImageAvailable'
+const IMG_URL = 'https://image.tmdb.org/t/p/w500'
 
 async function getTrending(config) {
     const url = `${BASE_URL}/trending/movie/week?api_key=${KEY_API}&language=ru-US`;
@@ -95,7 +97,6 @@ function normalizedImgUrl(movies) {
     }));
 }
 function checkPosterPath(path) {
-    // eslint-disable-next-line no-undef
     return path ? `${IMG_URL}${path}` : noImageAvailable;
 }
 const api = {

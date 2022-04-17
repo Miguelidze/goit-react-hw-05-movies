@@ -40,8 +40,9 @@ export default function HomePage() {
     getTrendingMovies();
 
     return () => {
-      if (source) {
-        source.cancel('Landing Component got unmounted');
+      if (source)
+      {
+// source.cancel('Landing Component got unmounted');
       }
     };
   }, [setTrendingMovies, trendingMovies]);
