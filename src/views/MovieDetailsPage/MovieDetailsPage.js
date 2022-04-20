@@ -14,10 +14,8 @@ export default function MovieDetailsPage() {
   const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-  const {
-    slug
-  } = useParams();
-  const movieId = slug.match(/[a-z0-9]+$/)[0];
+  const {slug} = useParams();
+  const movieId = slug.match(/[a-z0-9]+$/)['0'];
 
   const prevPage = useRef(location.state?.prevPath);
 

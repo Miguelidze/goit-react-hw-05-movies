@@ -42,7 +42,7 @@ export default function HomePage() {
     return () => {
       if (source)
       {
-// source.cancel('Landing Component got unmounted');
+        source.cancel('Landing Component got unmounted');
       }
     };
   }, [setTrendingMovies, trendingMovies]);

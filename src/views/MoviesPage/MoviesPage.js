@@ -10,7 +10,7 @@ import Loader from 'components/Loader/Loader';
 let source;
 
 export default function MoviesPage() {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState();
   const [isLoading, setIsLoading] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
   const location = useLocation();
@@ -21,7 +21,9 @@ export default function MoviesPage() {
   useEffect(() => {
     if (!searchQuery) {
       return;
+  
     }
+
 
     source = axios.CancelToken.source();
     const config = {

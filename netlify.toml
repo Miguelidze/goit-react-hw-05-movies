@@ -3,5 +3,5 @@
 
 [[redirects]]
     from = "/*"
-    to = "/insex.html"
+    to = "/index.js"
     status = 200
