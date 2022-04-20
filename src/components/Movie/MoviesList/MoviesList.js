@@ -13,7 +13,7 @@ MoviesList.propTypes = {
 };
 
 export default function MoviesList({ movies, from }) {
-    const moviesListElements = movies.map(movie => (
+    const moviesListElements = movies.map((movie) => (
         <MovieItem
             key={movie.id}
             id={movie.id}

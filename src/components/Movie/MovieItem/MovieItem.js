@@ -10,7 +10,7 @@ export default function MovieItem({id, title, srcImage, from}) {
 
     return (
         <Container >
-            <LinkStyled to = {`/movies/${makeSlag()}`}state = {{ prevPath: from}} >
+            <LinkStyled to = {`/movies/${makeSlag()}`} state = {{ prevPath: from}} >
                 <Image src={srcImage} alt={title} />
                 <Title> {title} </Title>
             </LinkStyled>

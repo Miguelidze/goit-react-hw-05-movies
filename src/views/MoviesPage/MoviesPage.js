@@ -10,7 +10,7 @@ import Loader from 'components/Loader/Loader';
 let source;
 
 export default function MoviesPage() {
-  const [movies, setMovies] = useState();
+  const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
   const location = useLocation();
@@ -33,7 +33,6 @@ export default function MoviesPage() {
     const getMovies = async () => {
       try {
         setIsLoading(true);
-
         const movies = await api.getMoviesByQuery(searchQuery, config);
         setMovies(movies);
       } catch (error) {
