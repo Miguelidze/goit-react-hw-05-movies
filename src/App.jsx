@@ -8,23 +8,6 @@ import MovieDetailsPage from 'views/MovieDetailsPage/MovieDetailsPage';
 import Cast from 'components/Cast/Cast';
 import Reviews from 'components/Reviews/Reviews';
 
-
-// const HomePage = lazy(() =>
-//   import('views/HomPage/HomePage' /* webpackChunkName: "home-page" */)
-// );
-// const MoviesPage = lazy(() =>
-//   import('views/MoviesPage/MoviesPage' /* webpackChunkName: "movies-page" */)
-// );
-// const MovieDetailsPage = lazy(() =>
-//   import('views/MovieDetailsPage/MovieDetailsPage' /* webpackChunkName: "movie-details-page" */)
-// );
-// const Cast = lazy(() =>
-//   import('components/Cast/Cast' /* webpackChunkName: "cast" */)
-// );
-// const Reviews = lazy(() =>
-//   import('components/Reviews/Reviews' /* webpackChunkName: "reviews" */)
-// );
-
 export default function App() {
   return (
     <>
@@ -51,3 +34,18 @@ export default function App() {
   );
 }
 
+// const HomePage = lazy(() =>
+//   import('views/HomPage/HomePage' /* webpackChunkName: "home-page" */)
+// );
+// const MoviesPage = lazy(() =>
+//   import('views/MoviesPage/MoviesPage' /* webpackChunkName: "movies-page" */)
+// );
+// const MovieDetailsPage = lazy(() =>
+//   import('views/MovieDetailsPage/MovieDetailsPage' /* webpackChunkName: "movie-details-page" */)
+// );
+// const Cast = lazy(() =>
+//   import('components/Cast/Cast' /* webpackChunkName: "cast" */)
+// );
+// const Reviews = lazy(() =>
+//   import('components/Reviews/Reviews' /* webpackChunkName: "reviews" */)
+// );
