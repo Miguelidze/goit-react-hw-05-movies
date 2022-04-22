@@ -3,11 +3,6 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {lazy} from 'react';
 import Layout from 'components/Layout/Layout';
-// import HomePage from 'views/HomePage/HomePage';
-// import MoviesPage from 'views/MoviesPage/MoviesPage';
-// import MovieDetailsPage from 'views/MovieDetailsPage/MovieDetailsPage';
-// import Cast from 'components/Cast/Cast';
-// import Reviews from 'components/Reviews/Reviews';
 
 const HomePage = lazy(() =>
   import('views/HomePage/HomePage' /* webpackChunkName: "home-page" */)
